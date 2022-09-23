@@ -3,10 +3,11 @@ let i = 0;
 let j = 0;
 
 function setup() {
-  createCanvas(720, 400);
+  let canvas = createCanvas(windowWidth * 0.6, windowHeight * 0.6);
   for (let i = 0; i < width / 8; i++) {
     values.push(random(height));
   }
+  canvas.parent("sketch-holder");
 }
 
 function draw() {
